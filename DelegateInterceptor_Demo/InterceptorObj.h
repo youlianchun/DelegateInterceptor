@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-#import "DelegateInterceptorProtocol.h"
-@interface InterceptorObj : NSObject<DelegateInterceptorProtocol>
+#import "BaseDelegateInterceptor.h"
+@interface InterceptorObj : BaseDelegateInterceptor
 
 @end

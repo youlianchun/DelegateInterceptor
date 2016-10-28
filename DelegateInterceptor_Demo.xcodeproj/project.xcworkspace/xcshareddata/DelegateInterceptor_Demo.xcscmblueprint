@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "585386C7DFA0F78C6D5EF3A5325CF2B59C5AB858",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "585386C7DFA0F78C6D5EF3A5325CF2B59C5AB858" : 9223372036854775807,
+    "EE9CDF67CC35100EB8AF1E8B9059E56162390DA1" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "09C6B2B4-9316-4960-A576-72D5508D8241",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "585386C7DFA0F78C6D5EF3A5325CF2B59C5AB858" : "DelegateInterceptor\/",
+    "EE9CDF67CC35100EB8AF1E8B9059E56162390DA1" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "DelegateInterceptor_Demo",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "DelegateInterceptor_Demo.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/youlianchun\/DelegateInterceptor.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "585386C7DFA0F78C6D5EF3A5325CF2B59C5AB858"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/youlianchun\/youlianchun.github.io.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "EE9CDF67CC35100EB8AF1E8B9059E56162390DA1"
+    }
+  ]
+}

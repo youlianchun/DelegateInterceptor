@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A984228B1D5C2D3F00C02583 /* InterceptorObj.m in Sources */ = {isa = PBXBuildFile; fileRef = A984228A1D5C2D3F00C02583 /* InterceptorObj.m */; };
+		A9D586331DC399B300C01E7E /* BaseDelegateInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D586321DC399B300C01E7E /* BaseDelegateInterceptor.m */; };
 		A9E4E5871D52F218005C5925 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E4E5861D52F218005C5925 /* main.m */; };
 		A9E4E58A1D52F218005C5925 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E4E5891D52F218005C5925 /* AppDelegate.m */; };
 		A9E4E58D1D52F218005C5925 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E4E58C1D52F218005C5925 /* ViewController.m */; };
@@ -18,8 +19,6 @@
 		A9E4E5AB1D52F218005C5925 /* DelegateInterceptor_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E4E5AA1D52F218005C5925 /* DelegateInterceptor_DemoUITests.m */; };
 		A9E4E5BE1D52F2B1005C5925 /* EITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E4E5BD1D52F2B1005C5925 /* EITableView.m */; };
 		A9F5D9B81D7C52D700EB46BF /* DelegateInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F5D9B11D7C52D700EB46BF /* DelegateInterceptor.m */; };
-		A9F5D9B91D7C52D700EB46BF /* DelegateInterceptorProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F5D9B31D7C52D700EB46BF /* DelegateInterceptorProtocol.m */; };
-		A9F5D9BA1D7C52D700EB46BF /* libDelegateInterceptor.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A9F5D9B71D7C52D700EB46BF /* libDelegateInterceptor.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +41,8 @@
 /* Begin PBXFileReference section */
 		A98422891D5C2D3F00C02583 /* InterceptorObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterceptorObj.h; sourceTree = "<group>"; };
 		A984228A1D5C2D3F00C02583 /* InterceptorObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterceptorObj.m; sourceTree = "<group>"; };
+		A9D586311DC399B300C01E7E /* BaseDelegateInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDelegateInterceptor.h; sourceTree = "<group>"; };
+		A9D586321DC399B300C01E7E /* BaseDelegateInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDelegateInterceptor.m; sourceTree = "<group>"; };
 		A9E4E5821D52F218005C5925 /* DelegateInterceptor_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegateInterceptor_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E4E5861D52F218005C5925 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9E4E5881D52F218005C5925 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -62,11 +63,6 @@
 		A9E4E5BD1D52F2B1005C5925 /* EITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EITableView.m; sourceTree = "<group>"; };
 		A9F5D9B01D7C52D700EB46BF /* DelegateInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateInterceptor.h; sourceTree = "<group>"; };
 		A9F5D9B11D7C52D700EB46BF /* DelegateInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateInterceptor.m; sourceTree = "<group>"; };
-		A9F5D9B21D7C52D700EB46BF /* DelegateInterceptorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateInterceptorProtocol.h; sourceTree = "<group>"; };
-		A9F5D9B31D7C52D700EB46BF /* DelegateInterceptorProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateInterceptorProtocol.m; sourceTree = "<group>"; };
-		A9F5D9B51D7C52D700EB46BF /* DelegateInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateInterceptor.h; sourceTree = "<group>"; };
-		A9F5D9B61D7C52D700EB46BF /* DelegateInterceptorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateInterceptorProtocol.h; sourceTree = "<group>"; };
-		A9F5D9B71D7C52D700EB46BF /* libDelegateInterceptor.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libDelegateInterceptor.a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +70,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9F5D9BA1D7C52D700EB46BF /* libDelegateInterceptor.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,21 +162,10 @@
 			children = (
 				A9F5D9B01D7C52D700EB46BF /* DelegateInterceptor.h */,
 				A9F5D9B11D7C52D700EB46BF /* DelegateInterceptor.m */,
-				A9F5D9B21D7C52D700EB46BF /* DelegateInterceptorProtocol.h */,
-				A9F5D9B31D7C52D700EB46BF /* DelegateInterceptorProtocol.m */,
-				A9F5D9B41D7C52D700EB46BF /* libDelegateInterceptor */,
+				A9D586311DC399B300C01E7E /* BaseDelegateInterceptor.h */,
+				A9D586321DC399B300C01E7E /* BaseDelegateInterceptor.m */,
 			);
 			path = DelegateInterceptor;
-			sourceTree = "<group>";
-		};
-		A9F5D9B41D7C52D700EB46BF /* libDelegateInterceptor */ = {
-			isa = PBXGroup;
-			children = (
-				A9F5D9B51D7C52D700EB46BF /* DelegateInterceptor.h */,
-				A9F5D9B61D7C52D700EB46BF /* DelegateInterceptorProtocol.h */,
-				A9F5D9B71D7C52D700EB46BF /* libDelegateInterceptor.a */,
-			);
-			path = libDelegateInterceptor;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,10 +299,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A9F5D9B81D7C52D700EB46BF /* DelegateInterceptor.m in Sources */,
+				A9D586331DC399B300C01E7E /* BaseDelegateInterceptor.m in Sources */,
 				A9E4E58D1D52F218005C5925 /* ViewController.m in Sources */,
 				A9E4E5BE1D52F2B1005C5925 /* EITableView.m in Sources */,
 				A9E4E58A1D52F218005C5925 /* AppDelegate.m in Sources */,
-				A9F5D9B91D7C52D700EB46BF /* DelegateInterceptorProtocol.m in Sources */,
 				A984228B1D5C2D3F00C02583 /* InterceptorObj.m in Sources */,
 				A9E4E5871D52F218005C5925 /* main.m in Sources */,
 			);

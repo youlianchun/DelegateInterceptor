@@ -9,8 +9,6 @@
 #import "DelegateInterceptor.h"
 
 @implementation DelegateInterceptor
-@synthesize receiver = _receiver;
-@synthesize middleMan = _middleMan;
 
 - (BOOL) respondsToSelector:(SEL)aSelector {
     
