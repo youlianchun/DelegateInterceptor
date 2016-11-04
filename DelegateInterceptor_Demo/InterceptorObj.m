@@ -20,4 +20,9 @@
 - (void)textViewDidChange:(UITextView *)textView{
     NSLog(@"textViewDidChange_in_InterceptorObj");
 }
+- (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
+    NSLog(@"rturn_false");
+    return false;
+}
+
 @end

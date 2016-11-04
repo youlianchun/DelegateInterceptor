@@ -8,12 +8,15 @@
 
 #import "ViewController.h"
 #import "DelegateInterceptor.h"
+#import "DelegateDistribute.h"
 #import "InterceptorObj.h"
 @interface ViewController ()<UITextViewDelegate,UITableViewDelegate,UITableViewDataSource>
-@property(nonatomic)InterceptorObj*obj;
+@property (nonatomic)InterceptorObj*obj;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property(nonatomic)DelegateInterceptor* textViewDelegateInterceptor;
+@property(nonatomic)DelegateDistribute* textViewDelegateDistribute;
+
 
 @end
 
@@ -28,8 +31,12 @@
     self.textViewDelegateInterceptor =[[DelegateInterceptor alloc]init];;
     self.textViewDelegateInterceptor.middleMan=self.obj;
     self.textViewDelegateInterceptor.receiver=self;
+//    self.textView.delegate=(id<UITextViewDelegate>)self.textViewDelegateInterceptor;
     
-    self.textView.delegate=(id<UITextViewDelegate>)self.textViewDelegateInterceptor;
+    self.textViewDelegateDistribute = [[DelegateDistribute alloc]init];
+    self.textViewDelegateDistribute.receivers = @[self,self.obj];
+    self.textView.delegate=(id<UITextViewDelegate>)self.textViewDelegateDistribute;
+
 //    self.textView.delegate=self;
     
     self.tableView.dataSource=(id<UITableViewDataSource>)self.obj;
@@ -60,7 +67,7 @@
     return [[UITableViewCell alloc]init];
 }
 - (BOOL)textView:(UITextView *)textView shouldChangeTextInRange:(NSRange)range replacementText:(NSString *)text{
-    NSLog(@"textView:shouldChangeTextInRange:replacementText:");
+    NSLog(@"rturn_true");
     return true;
 }
 - (void)textViewDidChange:(UITextView *)textView{
