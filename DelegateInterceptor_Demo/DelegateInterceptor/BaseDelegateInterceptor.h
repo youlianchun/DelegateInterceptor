@@ -13,4 +13,6 @@
  *  代理源
  */
 @property (nonatomic, readwrite, weak) DelegateType receiver;
+
+
 @end

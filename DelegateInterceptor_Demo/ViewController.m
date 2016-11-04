@@ -28,14 +28,14 @@
     self.obj.receiver=self;
     
     
-    self.textViewDelegateInterceptor =[[DelegateInterceptor alloc]init];;
-    self.textViewDelegateInterceptor.middleMan=self.obj;
-    self.textViewDelegateInterceptor.receiver=self;
+//    self.textViewDelegateInterceptor =[[DelegateInterceptor alloc]init];;
+//    self.textViewDelegateInterceptor.middleMan=self.obj;
+//    self.textViewDelegateInterceptor.receiver=self;
 //    self.textView.delegate=(id<UITextViewDelegate>)self.textViewDelegateInterceptor;
     
-    self.textViewDelegateDistribute = [[DelegateDistribute alloc]init];
-    self.textViewDelegateDistribute.receivers = @[self,self.obj];
-    self.textView.delegate=(id<UITextViewDelegate>)self.textViewDelegateDistribute;
+//    self.textViewDelegateDistribute = [[DelegateDistribute alloc]init];
+//    self.textViewDelegateDistribute.receivers = @[self,self.obj];
+    //self.textView.delegate=(id<UITextViewDelegate>)self.textViewDelegateDistribute;
 
 //    self.textView.delegate=self;
     

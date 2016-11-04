@@ -8,7 +8,9 @@
 
 #import "BaseDelegateInterceptor.h"
 
+
 @implementation BaseDelegateInterceptor
+
 
 - (id)forwardingTargetForSelector:(SEL)aSelector {
     if ([super respondsToSelector:aSelector]) {
@@ -21,8 +23,8 @@
 }
 
 - (BOOL)respondsToSelector:(SEL)aSelector {
-    NSString*aSelectorName=NSStringFromSelector(aSelector);
-    if (![aSelectorName hasPrefix:@"keyboardInput"] ) {//键盘输入代理过滤
+    NSString*selName=NSStringFromSelector(aSelector);
+    if (![selName hasPrefix:@"keyboardInput"] ) {//键盘输入代理过滤
         if ([super respondsToSelector:aSelector]) {
             return YES;
         }
