@@ -24,7 +24,7 @@
 
 - (BOOL)respondsToSelector:(SEL)aSelector {
     NSString*selName=NSStringFromSelector(aSelector);
-    if (![selName hasPrefix:@"keyboardInput"] ) {//键盘输入代理过滤
+    if (![selName hasPrefix:@"keyboardInput"] && ![selName isEqualToString:@"customOverlayContainer"]) {//键盘输入代理过滤
         if ([super respondsToSelector:aSelector]) {
             return YES;
         }

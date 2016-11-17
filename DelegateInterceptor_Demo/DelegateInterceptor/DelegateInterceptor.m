@@ -12,9 +12,9 @@
 
 - (BOOL) respondsToSelector:(SEL)aSelector {
     
-    NSString*aSelectorName=NSStringFromSelector(aSelector);
+    NSString*selName=NSStringFromSelector(aSelector);
     
-    if (![aSelectorName hasPrefix:@"keyboardInput"] ) {//键盘输入代理过滤
+    if (![selName hasPrefix:@"keyboardInput"] && ![selName isEqualToString:@"customOverlayContainer"]) {//键盘输入代理过滤
         
         if ([_middleMan respondsToSelector:aSelector])
             return YES;
