@@ -24,15 +24,16 @@
 
 - (BOOL)respondsToSelector:(SEL)aSelector {
     NSString*selName=NSStringFromSelector(aSelector);
-    if (![selName hasPrefix:@"keyboardInput"] && ![selName isEqualToString:@"customOverlayContainer"]) {//键盘输入代理过滤
-        if ([super respondsToSelector:aSelector]) {
-            return YES;
-        }
-        if (self.receiver && [self.receiver respondsToSelector:aSelector]) {
-            return YES;
-        }
+    if ([selName hasPrefix:@"keyboardInput"] || [selName isEqualToString:@"customOverlayContainer"]) {//键盘输入代理过滤
+        return NO;
     }
-    return false;
+    if ([super respondsToSelector:aSelector]) {
+        return YES;
+    }
+    if (self.receiver && [self.receiver respondsToSelector:aSelector]) {
+        return YES;
+    }
+    return NO;
 }
 
 @end

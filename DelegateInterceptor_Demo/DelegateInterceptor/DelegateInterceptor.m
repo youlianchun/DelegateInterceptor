@@ -11,20 +11,17 @@
 @implementation DelegateInterceptor
 
 - (BOOL) respondsToSelector:(SEL)aSelector {
-    
     NSString*selName=NSStringFromSelector(aSelector);
-    
-    if (![selName hasPrefix:@"keyboardInput"] && ![selName isEqualToString:@"customOverlayContainer"]) {//键盘输入代理过滤
-        
-        if ([_middleMan respondsToSelector:aSelector])
-            return YES;
-        
-        if ([_receiver respondsToSelector:aSelector])
-            return YES;
+    if ([selName hasPrefix:@"keyboardInput"] || [selName isEqualToString:@"customOverlayContainer"]) {//键盘输入代理过滤
+        return NO;
     }
-    
+    if ([_middleMan respondsToSelector:aSelector]) {
+        return YES;
+    }
+    if ([_receiver respondsToSelector:aSelector]) {
+        return YES;
+    }
     return [super respondsToSelector:aSelector];
-    
 }
 
 /**
@@ -35,13 +32,12 @@
  *  @return 用来响应选择器的类
  */
 - (id) forwardingTargetForSelector:(SEL)aSelector {
-    
-    if ([_middleMan respondsToSelector:aSelector])
+    if ([_middleMan respondsToSelector:aSelector]) {
         return _middleMan;
-    
-    if ([_receiver respondsToSelector:aSelector])
+    }
+    if ([_receiver respondsToSelector:aSelector]) {
         return _receiver;
-    
+    }
     return	[super forwardingTargetForSelector:aSelector];
 }
 
@@ -49,40 +45,6 @@
 -(id)mySelf {
     return self;
 }
-
-
-//- (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector{
-//    NSMethodSignature *signature = [self.middleMan methodSignatureForSelector:aSelector];
-//    if (!signature) {
-//        signature = [self.receiver methodSignatureForSelector:aSelector];
-//    }
-//    return signature;
-//}
-//
-//- (void)forwardInvocation:(NSInvocation *)anInvocation{
-//    if ([self.receiver respondsToSelector:anInvocation.selector]) {
-//        [anInvocation invokeWithTarget:self.receiver];
-//    }
-//    if ([self.middleMan respondsToSelector:anInvocation.selector]) {
-//        [anInvocation invokeWithTarget:self.middleMan];
-//    }
-//}
-//- (BOOL) respondsToSelector:(SEL)aSelector {
-//    
-//    NSString*aSelectorName=NSStringFromSelector(aSelector);
-//    
-//    if (![aSelectorName hasPrefix:@"keyboardInput"] ) {//键盘输入代理过滤
-//        
-//        if ([_middleMan respondsToSelector:aSelector])
-//            return YES;
-//        
-//        if ([_receiver respondsToSelector:aSelector])
-//            return YES;
-//    }
-//    
-//    return false;
-//    
-//}
 
 
 @end
