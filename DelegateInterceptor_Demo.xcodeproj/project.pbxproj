@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A912E0411F9C7E060044C57A /* DelegateInterceptor.mm in Sources */ = {isa = PBXBuildFile; fileRef = A912E0401F9C7E060044C57A /* DelegateInterceptor.mm */; };
 		A984228B1D5C2D3F00C02583 /* InterceptorObj.m in Sources */ = {isa = PBXBuildFile; fileRef = A984228A1D5C2D3F00C02583 /* InterceptorObj.m */; };
-		A9D586331DC399B300C01E7E /* BaseDelegateInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A9D586321DC399B300C01E7E /* BaseDelegateInterceptor.m */; };
 		A9E4E5871D52F218005C5925 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E4E5861D52F218005C5925 /* main.m */; };
 		A9E4E58A1D52F218005C5925 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E4E5891D52F218005C5925 /* AppDelegate.m */; };
 		A9E4E58D1D52F218005C5925 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E4E58C1D52F218005C5925 /* ViewController.m */; };
@@ -17,8 +17,6 @@
 		A9E4E5951D52F218005C5925 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A9E4E5931D52F218005C5925 /* LaunchScreen.storyboard */; };
 		A9E4E5A01D52F218005C5925 /* DelegateInterceptor_DemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E4E59F1D52F218005C5925 /* DelegateInterceptor_DemoTests.m */; };
 		A9E4E5AB1D52F218005C5925 /* DelegateInterceptor_DemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E4E5AA1D52F218005C5925 /* DelegateInterceptor_DemoUITests.m */; };
-		A9E4E5BE1D52F2B1005C5925 /* EITableView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9E4E5BD1D52F2B1005C5925 /* EITableView.m */; };
-		A9F5D9B81D7C52D700EB46BF /* DelegateInterceptor.m in Sources */ = {isa = PBXBuildFile; fileRef = A9F5D9B11D7C52D700EB46BF /* DelegateInterceptor.m */; };
 		A9FC02CD1DCC305900599B9A /* DelegateDistribute.m in Sources */ = {isa = PBXBuildFile; fileRef = A9FC02CC1DCC305900599B9A /* DelegateDistribute.m */; };
 /* End PBXBuildFile section */
 
@@ -40,10 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A912E0401F9C7E060044C57A /* DelegateInterceptor.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = DelegateInterceptor.mm; sourceTree = "<group>"; };
 		A98422891D5C2D3F00C02583 /* InterceptorObj.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InterceptorObj.h; sourceTree = "<group>"; };
 		A984228A1D5C2D3F00C02583 /* InterceptorObj.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InterceptorObj.m; sourceTree = "<group>"; };
-		A9D586311DC399B300C01E7E /* BaseDelegateInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDelegateInterceptor.h; sourceTree = "<group>"; };
-		A9D586321DC399B300C01E7E /* BaseDelegateInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDelegateInterceptor.m; sourceTree = "<group>"; };
 		A9E4E5821D52F218005C5925 /* DelegateInterceptor_Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegateInterceptor_Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E4E5861D52F218005C5925 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A9E4E5881D52F218005C5925 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -60,10 +57,7 @@
 		A9E4E5A61D52F218005C5925 /* DelegateInterceptor_DemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DelegateInterceptor_DemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9E4E5AA1D52F218005C5925 /* DelegateInterceptor_DemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DelegateInterceptor_DemoUITests.m; sourceTree = "<group>"; };
 		A9E4E5AC1D52F218005C5925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A9E4E5BC1D52F2B1005C5925 /* EITableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EITableView.h; sourceTree = "<group>"; };
-		A9E4E5BD1D52F2B1005C5925 /* EITableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EITableView.m; sourceTree = "<group>"; };
 		A9F5D9B01D7C52D700EB46BF /* DelegateInterceptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateInterceptor.h; sourceTree = "<group>"; };
-		A9F5D9B11D7C52D700EB46BF /* DelegateInterceptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateInterceptor.m; sourceTree = "<group>"; };
 		A9FC02CB1DCC305900599B9A /* DelegateDistribute.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateDistribute.h; sourceTree = "<group>"; };
 		A9FC02CC1DCC305900599B9A /* DelegateDistribute.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateDistribute.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -128,8 +122,6 @@
 				A9E4E5931D52F218005C5925 /* LaunchScreen.storyboard */,
 				A9E4E5961D52F218005C5925 /* Info.plist */,
 				A9E4E5851D52F218005C5925 /* Supporting Files */,
-				A9E4E5BC1D52F2B1005C5925 /* EITableView.h */,
-				A9E4E5BD1D52F2B1005C5925 /* EITableView.m */,
 			);
 			path = DelegateInterceptor_Demo;
 			sourceTree = "<group>";
@@ -164,11 +156,9 @@
 			isa = PBXGroup;
 			children = (
 				A9F5D9B01D7C52D700EB46BF /* DelegateInterceptor.h */,
-				A9F5D9B11D7C52D700EB46BF /* DelegateInterceptor.m */,
+				A912E0401F9C7E060044C57A /* DelegateInterceptor.mm */,
 				A9FC02CB1DCC305900599B9A /* DelegateDistribute.h */,
 				A9FC02CC1DCC305900599B9A /* DelegateDistribute.m */,
-				A9D586311DC399B300C01E7E /* BaseDelegateInterceptor.h */,
-				A9D586321DC399B300C01E7E /* BaseDelegateInterceptor.m */,
 			);
 			path = DelegateInterceptor;
 			sourceTree = "<group>";
@@ -240,6 +230,7 @@
 				TargetAttributes = {
 					A9E4E5811D52F218005C5925 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = V6QCEN324A;
 					};
 					A9E4E59A1D52F218005C5925 = {
 						CreatedOnToolsVersion = 7.3.1;
@@ -303,11 +294,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9F5D9B81D7C52D700EB46BF /* DelegateInterceptor.m in Sources */,
 				A9FC02CD1DCC305900599B9A /* DelegateDistribute.m in Sources */,
-				A9D586331DC399B300C01E7E /* BaseDelegateInterceptor.m in Sources */,
 				A9E4E58D1D52F218005C5925 /* ViewController.m in Sources */,
-				A9E4E5BE1D52F2B1005C5925 /* EITableView.m in Sources */,
+				A912E0411F9C7E060044C57A /* DelegateInterceptor.mm in Sources */,
 				A9E4E58A1D52F218005C5925 /* AppDelegate.m in Sources */,
 				A984228B1D5C2D3F00C02583 /* InterceptorObj.m in Sources */,
 				A9E4E5871D52F218005C5925 /* main.m in Sources */,
@@ -453,6 +442,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V6QCEN324A;
 				INFOPLIST_FILE = DelegateInterceptor_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -461,7 +451,7 @@
 					"$(PROJECT_DIR)/DelegateInterceptor_Demo/libDelegateInterceptor",
 					"$(PROJECT_DIR)/DelegateInterceptor_Demo/DelegateInterceptor/libDelegateInterceptor",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ylchun.DelegateInterceptor-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lrlz.PandaMakeUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -470,6 +460,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = V6QCEN324A;
 				INFOPLIST_FILE = DelegateInterceptor_Demo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				LIBRARY_SEARCH_PATHS = (
@@ -478,7 +469,7 @@
 					"$(PROJECT_DIR)/DelegateInterceptor_Demo/libDelegateInterceptor",
 					"$(PROJECT_DIR)/DelegateInterceptor_Demo/DelegateInterceptor/libDelegateInterceptor",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ylchun.DelegateInterceptor-Demo";
+				PRODUCT_BUNDLE_IDENTIFIER = com.lrlz.PandaMakeUp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

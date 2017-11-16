@@ -7,8 +7,13 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <UIKit/UIKit.h>
-#import "BaseDelegateInterceptor.h"
-@interface InterceptorObj : BaseDelegateInterceptor
+
+#import "DelegateInterceptor.h"
+@interface InterceptorObj : DelegateInterceptor
+
+@end
+
+
+@interface InterceptorObj2 : DelegateInterceptor
 
 @end

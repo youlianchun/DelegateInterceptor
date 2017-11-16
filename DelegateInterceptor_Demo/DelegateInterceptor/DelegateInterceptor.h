@@ -9,15 +9,25 @@
 #import <Foundation/Foundation.h>
 
 @interface DelegateInterceptor<DelegateType> : NSObject
-/**
- *  代理源
- */
-@property (nonatomic, readwrite, weak) DelegateType receiver;
-/**
- *  代理中介
- */
-@property (nonatomic, readwrite, weak) id middleMan;
 
 @property (nonatomic, readonly) DelegateType mySelf;
+
+/**
+ 代理源
+ */
+@property (nonatomic, readonly, weak) id original;
+
+/**
+ 拦截者
+ */
+@property (nonatomic, readonly, weak) id accepter;
+
+- (instancetype) initWithOriginal:(DelegateType)original accepter:(id)accepter;
+
+- (instancetype) initWithOriginal:(DelegateType)original;
+
+- (bool) originalRespondsToSelector:(SEL)aSelector;
+
+- (bool) accepterRespondsToSelector:(SEL)aSelector;
 
 @end
