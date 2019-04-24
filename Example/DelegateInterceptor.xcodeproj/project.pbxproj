@@ -39,7 +39,7 @@
 
 /* Begin PBXFileReference section */
 		19037E974D0FF20C011B82FF /* Pods-DelegateInterceptor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelegateInterceptor_Example.release.xcconfig"; path = "Target Support Files/Pods-DelegateInterceptor_Example/Pods-DelegateInterceptor_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1E3732AB08F20DA95F22B4D2 /* DelegateInterceptor.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DelegateInterceptor.podspec; path = ../DelegateInterceptor.podspec; sourceTree = "<group>"; };
+		1E3732AB08F20DA95F22B4D2 /* DelegateInterceptor.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = DelegateInterceptor.podspec; path = ../DelegateInterceptor.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		41AAC3F8A4ACBF59F7E29163 /* Pods-DelegateInterceptor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DelegateInterceptor_Tests.debug.xcconfig"; path = "Target Support Files/Pods-DelegateInterceptor_Tests/Pods-DelegateInterceptor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* DelegateInterceptor_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DelegateInterceptor_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
