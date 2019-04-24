@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '8.0'
+
+target 'DelegateInterceptor_Example' do
+  pod 'DelegateInterceptor', :path => '../'
+
+  target 'DelegateInterceptor_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

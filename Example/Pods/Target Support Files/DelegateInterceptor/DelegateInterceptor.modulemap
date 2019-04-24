@@ -1,0 +1,6 @@
+framework module DelegateInterceptor {
+  umbrella header "DelegateInterceptor-umbrella.h"
+
+  export *
+  module * { export * }
+}

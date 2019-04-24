@@ -1,0 +1,16 @@
+PODS:
+  - DelegateInterceptor (0.1.0)
+
+DEPENDENCIES:
+  - DelegateInterceptor (from `../`)
+
+EXTERNAL SOURCES:
+  DelegateInterceptor:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DelegateInterceptor: e1667e1bbe0de5f8c5f1e155f4239ca8a916db3a
+
+PODFILE CHECKSUM: 759eff5edcdb200dcfd83ae6ded3c3acf26c59dd
+
+COCOAPODS: 1.7.0.beta.3

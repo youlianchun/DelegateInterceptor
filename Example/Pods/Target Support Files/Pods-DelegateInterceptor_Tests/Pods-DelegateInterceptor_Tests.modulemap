@@ -1,0 +1,6 @@
+framework module Pods_DelegateInterceptor_Tests {
+  umbrella header "Pods-DelegateInterceptor_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
