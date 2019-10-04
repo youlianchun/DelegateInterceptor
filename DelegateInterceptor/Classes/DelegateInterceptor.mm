@@ -21,7 +21,7 @@ typedef std::map<std::string, bool> DIResponds;
     __weak id _accepter;
 }
 
-- (instancetype) initWithOriginal:(id)original accepter:(id)accepter
+- (instancetype)initWithOriginal:(id)original accepter:(id)accepter
 {
     self = [super init];
     if (self)
@@ -32,19 +32,19 @@ typedef std::map<std::string, bool> DIResponds;
     return self;
 }
 
-- (instancetype) initWithOriginal:(id)original
+- (instancetype)initWithOriginal:(id)original
 {
     return [self initWithOriginal:original accepter:nil];
 }
 
 static bool respondsToSelector(DIResponds &responds_map, id obj, SEL aSelector)
 {
-    if (obj == nil) {
+    if (obj == nil){
         return false;
     }
     bool b = false;
     std::string sel_name = sel_getName(aSelector);
-    if (responds_map.find(sel_name) == responds_map.end())
+    if (responds_map.find(sel_name)== responds_map.end())
     {
         b = [obj respondsToSelector:aSelector];
         responds_map.insert(std::make_pair(sel_name, b));
@@ -63,7 +63,7 @@ static bool respondsToSelector(DIResponds &responds_map, id obj, SEL aSelector)
 
 -(bool)accepterRespondsToSelector:(SEL)aSelector
 {
-    if (_accepter == self) {
+    if (_accepter == self){
         return [self superRespondsToSelector:aSelector];
     }
     return respondsToSelector(accepter_responds, _accepter, aSelector);
@@ -73,7 +73,7 @@ static bool respondsToSelector(DIResponds &responds_map, id obj, SEL aSelector)
 {
     bool b = false;
     std::string sel_name = sel_getName(aSelector);
-    if (super_responds.find(sel_name) == super_responds.end())
+    if (super_responds.find(sel_name)== super_responds.end())
     {
         b = [super respondsToSelector:aSelector];
         super_responds.insert(std::make_pair(sel_name, b));
@@ -93,39 +93,39 @@ static bool respondsToSelector(DIResponds &responds_map, id obj, SEL aSelector)
 }
 
 
-- (BOOL) respondsToSelector:(SEL)aSelector
+- (BOOL)respondsToSelector:(SEL)aSelector
 {
-    if ([self accepterRespondsToSelector:aSelector]) {
+    if ([self accepterRespondsToSelector:aSelector]){
         return YES;
     }
-    if ([self originalRespondsToSelector:aSelector]) {
+    if ([self originalRespondsToSelector:aSelector]){
         return YES;
     }
     return NO;
 }
 
-- (id) forwardingTargetForSelector:(SEL)aSelector
+- (id)forwardingTargetForSelector:(SEL)aSelector
 {
-    if ([self accepterRespondsToSelector:aSelector]) {
+    if ([self accepterRespondsToSelector:aSelector]){
         return _accepter;
     }
-    if ([self originalRespondsToSelector:aSelector]) {
+    if ([self originalRespondsToSelector:aSelector]){
         return _original;
     }
     return nil;
 }
 
-- (id) original
+- (id)original
 {
     return _original;
 }
 
-- (id) accepte
+- (id)accepte
 {
     return _accepter;
 }
 
--(id) mySelf
+-(id)mySelf
 {
     return self;
 }

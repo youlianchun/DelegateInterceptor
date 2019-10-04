@@ -10,24 +10,24 @@
 
 @interface DelegateInterceptor<DelegateType> : NSObject
 
-@property (nonatomic, readonly) DelegateType mySelf;
+@property (nonatomic, readonly)DelegateType mySelf;
 
 /**
  代理源
  */
-@property (nonatomic, readonly, weak) id original;
+@property (nonatomic, readonly, weak)id original;
 
 /**
  拦截者
  */
-@property (nonatomic, readonly, weak) id accepter;
+@property (nonatomic, readonly, weak)id accepter;
 
-- (instancetype) initWithOriginal:(DelegateType)original accepter:(id)accepter;
+- (instancetype)initWithOriginal:(DelegateType)original accepter:(id)accepter;
 
-- (instancetype) initWithOriginal:(DelegateType)original;
+- (instancetype)initWithOriginal:(DelegateType)original;
 
-- (bool) originalRespondsToSelector:(SEL)aSelector;
+- (bool)originalRespondsToSelector:(SEL)aSelector;
 
-- (bool) accepterRespondsToSelector:(SEL)aSelector;
+- (bool)accepterRespondsToSelector:(SEL)aSelector;
 
 @end
