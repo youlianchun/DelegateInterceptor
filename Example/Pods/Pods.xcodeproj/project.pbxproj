@@ -9,8 +9,6 @@
 /* Begin PBXBuildFile section */
 		1CA5F6E28A2D79DAC5762E5969E568F8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
 		3B746A7AB29182C5101939DF50F00752 /* Pods-DelegateInterceptor_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC6EC91A8331CDA70556927826DFE75 /* Pods-DelegateInterceptor_Tests-dummy.m */; };
-		3E0EAAEC7AD02E13570455BBFB7C2C2C /* DelegateDistribute.m in Sources */ = {isa = PBXBuildFile; fileRef = 908F57ABB8F994526342CC352BB09DE5 /* DelegateDistribute.m */; };
-		4D0B831EB0C7BC1889E57BEB2961D7CC /* DelegateDistribute.h in Headers */ = {isa = PBXBuildFile; fileRef = 667CE998BF2FB679136DD42428E14257 /* DelegateDistribute.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F31D4A9225E7AB218C3179FE8C20525 /* DelegateInterceptor-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6698771FC741A4322AC9C43B89ACCE98 /* DelegateInterceptor-dummy.m */; };
 		7CB79D9229700DEB85CC7CC2EC1A2F3D /* Pods-DelegateInterceptor_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2393D3BBB70F32F3DFFB8C07BC89DED9 /* Pods-DelegateInterceptor_Example-dummy.m */; };
 		882F9D4FC68C32E1E502D576D325FAFB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */; };
@@ -41,32 +39,30 @@
 
 /* Begin PBXFileReference section */
 		1372784EA4BAA4B6D3194AA7AAAA69F8 /* Pods-DelegateInterceptor_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DelegateInterceptor_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		151054D06A6C40D490FE05340B0B39DE /* Pods_DelegateInterceptor_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DelegateInterceptor_Example.framework; path = "Pods-DelegateInterceptor_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		151054D06A6C40D490FE05340B0B39DE /* Pods_DelegateInterceptor_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DelegateInterceptor_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CB8C9D9B069EBEFCC15C8EE0264EFDF /* DelegateInterceptor-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DelegateInterceptor-umbrella.h"; sourceTree = "<group>"; };
 		2393D3BBB70F32F3DFFB8C07BC89DED9 /* Pods-DelegateInterceptor_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DelegateInterceptor_Example-dummy.m"; sourceTree = "<group>"; };
 		2AC1D347A93831BEEB34362C5E28A91F /* Pods-DelegateInterceptor_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DelegateInterceptor_Tests-umbrella.h"; sourceTree = "<group>"; };
-		2B16BBA3A55F4C9D7E6E80F2521BF5F8 /* DelegateInterceptor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = DelegateInterceptor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		2B16BBA3A55F4C9D7E6E80F2521BF5F8 /* DelegateInterceptor.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = DelegateInterceptor.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		3A483E8AE9EB88334106B1B6482AA45E /* Pods-DelegateInterceptor_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DelegateInterceptor_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		3DC6EC91A8331CDA70556927826DFE75 /* Pods-DelegateInterceptor_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-DelegateInterceptor_Tests-dummy.m"; sourceTree = "<group>"; };
-		4F63498681889A495C1B8F7144B4A6D9 /* DelegateInterceptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = DelegateInterceptor.framework; path = DelegateInterceptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F63498681889A495C1B8F7144B4A6D9 /* DelegateInterceptor.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = DelegateInterceptor.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5630AC189C7B8FF8EECC54445E3C379D /* Pods-DelegateInterceptor_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DelegateInterceptor_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5D25F9EE32857597F86B616CDFC69FDB /* DelegateInterceptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DelegateInterceptor.h; path = DelegateInterceptor/Classes/DelegateInterceptor.h; sourceTree = "<group>"; };
 		65FA0105351497D5AD9D7902B28F69B7 /* Pods-DelegateInterceptor_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DelegateInterceptor_Example-Info.plist"; sourceTree = "<group>"; };
-		667CE998BF2FB679136DD42428E14257 /* DelegateDistribute.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = DelegateDistribute.h; path = DelegateInterceptor/Classes/DelegateDistribute.h; sourceTree = "<group>"; };
 		6698771FC741A4322AC9C43B89ACCE98 /* DelegateInterceptor-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "DelegateInterceptor-dummy.m"; sourceTree = "<group>"; };
-		7A03A6210174C4A66882299D5838DF8A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		7A03A6210174C4A66882299D5838DF8A /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		7AE7CDB1D43C59A70D38D3E540D6706E /* Pods-DelegateInterceptor_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DelegateInterceptor_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		908F57ABB8F994526342CC352BB09DE5 /* DelegateDistribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = DelegateDistribute.m; path = DelegateInterceptor/Classes/DelegateDistribute.m; sourceTree = "<group>"; };
 		9BC3B635372DD44D49D638310532158C /* Pods-DelegateInterceptor_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-DelegateInterceptor_Example-umbrella.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		9DB9612F7757A76FB5138FCB21F42B89 /* DelegateInterceptor.mm */ = {isa = PBXFileReference; includeInIndex = 1; name = DelegateInterceptor.mm; path = DelegateInterceptor/Classes/DelegateInterceptor.mm; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9DB9612F7757A76FB5138FCB21F42B89 /* DelegateInterceptor.mm */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.cpp.objcpp; name = DelegateInterceptor.mm; path = DelegateInterceptor/Classes/DelegateInterceptor.mm; sourceTree = "<group>"; };
 		A1889ED8C60AB028C3CAC1FDFE16370C /* Pods-DelegateInterceptor_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DelegateInterceptor_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		A9429F36CC2EC735BA9C8D2026BE29EB /* Pods-DelegateInterceptor_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DelegateInterceptor_Tests-Info.plist"; sourceTree = "<group>"; };
 		AC9D14321DAA9C7CCE26AFF44B98EEE2 /* Pods-DelegateInterceptor_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DelegateInterceptor_Tests.modulemap"; sourceTree = "<group>"; };
 		ACEB44C172C6330FCFC4723D76179B07 /* Pods-DelegateInterceptor_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-DelegateInterceptor_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		ADD97F5985193BABCF13FD73CFDB73D2 /* Pods-DelegateInterceptor_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-DelegateInterceptor_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		BC7F020E3B6A047C19BB612DAFB4346D /* DelegateInterceptor.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = DelegateInterceptor.modulemap; sourceTree = "<group>"; };
-		C1F99BCF96F53CFEFB03B57B713C3CCF /* Pods_DelegateInterceptor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_DelegateInterceptor_Tests.framework; path = "Pods-DelegateInterceptor_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C1F99BCF96F53CFEFB03B57B713C3CCF /* Pods_DelegateInterceptor_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DelegateInterceptor_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C936C567B72215176DC4840F287680BC /* Pods-DelegateInterceptor_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-DelegateInterceptor_Example-frameworks.sh"; sourceTree = "<group>"; };
 		CB25F51CA6619BA4AF717226913BC508 /* Pods-DelegateInterceptor_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-DelegateInterceptor_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		CB4607EFCA7C5F75397649E792E2AFCB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -74,7 +70,7 @@
 		DD709F25BA1F2EF3DFEAE2F00D897DC2 /* Pods-DelegateInterceptor_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-DelegateInterceptor_Example.modulemap"; sourceTree = "<group>"; };
 		E096887D66F0ED0282DC7AC810E16787 /* DelegateInterceptor-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "DelegateInterceptor-prefix.pch"; sourceTree = "<group>"; };
 		E5BE522E022982A76A71B581A61454F9 /* DelegateInterceptor.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = DelegateInterceptor.xcconfig; sourceTree = "<group>"; };
-		F65582A63588DC14E402575AF3EFEF93 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		F65582A63588DC14E402575AF3EFEF93 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,8 +124,6 @@
 		490E656CED274B8D74C43C014BF3C556 /* DelegateInterceptor */ = {
 			isa = PBXGroup;
 			children = (
-				667CE998BF2FB679136DD42428E14257 /* DelegateDistribute.h */,
-				908F57ABB8F994526342CC352BB09DE5 /* DelegateDistribute.m */,
 				5D25F9EE32857597F86B616CDFC69FDB /* DelegateInterceptor.h */,
 				9DB9612F7757A76FB5138FCB21F42B89 /* DelegateInterceptor.mm */,
 				47C191F4E80FE07EF85A38A2FF72EA1C /* Pod */,
@@ -253,7 +247,6 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D0B831EB0C7BC1889E57BEB2961D7CC /* DelegateDistribute.h in Headers */,
 				9097E2F6B1D80242CEF524A72E619C52 /* DelegateInterceptor-umbrella.h in Headers */,
 				9B76697AA75750838036E2F5DF353182 /* DelegateInterceptor.h in Headers */,
 			);
@@ -332,6 +325,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
@@ -383,7 +377,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E0EAAEC7AD02E13570455BBFB7C2C2C /* DelegateDistribute.m in Sources */,
 				5F31D4A9225E7AB218C3179FE8C20525 /* DelegateInterceptor-dummy.m in Sources */,
 				A214FD1330D9390F8FF78E2186580F00 /* DelegateInterceptor.mm in Sources */,
 			);
@@ -468,8 +461,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 4.2;
 				SYMROOT = "${SRCROOT}/../build";
 			};
